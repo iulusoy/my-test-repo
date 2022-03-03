@@ -23,3 +23,4 @@ def read_in(filedir, filename, mydatatype, myheader=False):
 
 if __name__ == "__main__":
     read_in("data/", "efield.t", "numpy", myheader=True)
+    read_in("data/", "npop_i.t", "pandas")
