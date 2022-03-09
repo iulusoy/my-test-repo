@@ -13,8 +13,6 @@ Welcome to My awesome project's documentation!
    readme
    modules
    license
-   installation
-   references
 
 
 Indices and tables
