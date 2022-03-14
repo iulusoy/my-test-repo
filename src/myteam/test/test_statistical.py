@@ -15,7 +15,7 @@ class build_df:
 
 @pytest.fixture(scope="module")
 def get_df():
-    obj = build_df("./tests/test_df.csv")
+    obj = build_df("./test/test_df.csv")
     data = obj.read_df()
     return data
 
