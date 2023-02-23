@@ -1,6 +1,38 @@
 [build-system]
 requires = [
-  "setuptools>=42",
-  "wheel"
+    "setuptools>=61",
 ]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "myteam"
+version = "0.0.1"
+description = "Example repo for course Scientific Software Development"
+maintainers = [
+    { name = "Inga Ulusoy", email = "ssc@iwr.uni-heidelberg.de" },
+]
+requires-python = ">=3.7"
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "pandas",
+    "numpy",
+    "matplotlib", 
+    "IPython",
+    "seaborn",
+    "importlib_metadata",
+    "pytest",
+    "pytest-cov",
+    "jupyter",
+]
+
+[tool.setuptools.package-data]
+# Include any *.dat files found in the "data" subdirectory of "moralization"
+"myteam.data" = ["*.dat"]
+
+[tool.setuptools]
+packages = ["myteam", "myteam.data"]
